@@ -12,31 +12,16 @@
             --dark: #2D2D2D;
             --light: #8A8A8A;
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Cormorant Garamond', serif;
             background: var(--cream);
             color: var(--dark);
             line-height: 1.8;
         }
-        
-        html[dir="rtl"] {
-            direction: rtl;
-            text-align: right;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 40px;
-        }
-        
+        html[dir="rtl"] { direction: rtl; text-align: right; }
+        .container { max-width: 900px; margin: 0 auto; padding: 60px 40px; }
+
         /* NAVIGATION */
         .nav-top {
             display: flex;
@@ -45,7 +30,6 @@
             margin-bottom: 50px;
             flex-wrap: wrap;
         }
-        
         .lang-btn {
             padding: 10px 20px;
             background: var(--gold);
@@ -59,12 +43,8 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        
-        .lang-btn:hover, .lang-btn.active {
-            background: var(--dark);
-            transform: translateY(-2px);
-        }
-        
+        .lang-btn:hover, .lang-btn.active { background: var(--dark); transform: translateY(-2px); }
+
         /* HEADER */
         .header {
             text-align: center;
@@ -72,35 +52,12 @@
             border-bottom: 2px solid var(--gold);
             padding-bottom: 40px;
         }
-        
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            font-weight: 400;
-            color: var(--dark);
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
-        
-        .tagline {
-            font-size: 1.2rem;
-            color: var(--light);
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        
-        .thank-you {
-            font-size: 1.3rem;
-            color: var(--gold);
-            font-weight: 600;
-            margin-top: 20px;
-        }
-        
+        .logo { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 400; color: var(--dark); margin-bottom: 10px; letter-spacing: 2px; }
+        .tagline { font-size: 1.2rem; color: var(--light); font-style: italic; margin-bottom: 20px; }
+        .thank-you { font-size: 1.3rem; color: var(--gold); font-weight: 600; margin-top: 20px; }
+
         /* SECTIONS */
-        .section {
-            margin-bottom: 50px;
-        }
-        
+        .section { margin-bottom: 50px; }
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 2.2rem;
@@ -110,24 +67,10 @@
             padding-left: 20px;
             font-weight: 400;
         }
-        
-        html[dir="rtl"] .section-title {
-            border-left: none;
-            border-right: 4px solid var(--gold);
-            padding-left: 0;
-            padding-right: 20px;
-        }
-        
-        .section-content {
-            font-size: 1.1rem;
-            line-height: 2;
-            color: var(--dark);
-        }
-        
-        .section-content p {
-            margin-bottom: 15px;
-        }
-        
+        html[dir="rtl"] .section-title { border-left: none; border-right: 4px solid var(--gold); padding-left: 0; padding-right: 20px; }
+        .section-content { font-size: 1.1rem; line-height: 2; color: var(--dark); }
+        .section-content p { margin-bottom: 15px; }
+
         /* FEATURES LIST */
         .features-grid {
             display: grid;
@@ -135,61 +78,44 @@
             gap: 30px;
             margin-top: 20px;
         }
-        
-        @media (max-width: 768px) {
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
+        @media (max-width: 768px) { .features-grid { grid-template-columns: 1fr; } }
         .feature-item {
             background: white;
             padding: 25px;
             border: 1px solid #E5E5E2;
             border-left: 4px solid var(--gold);
         }
-        
-        html[dir="rtl"] .feature-item {
-            border-left: none;
-            border-right: 4px solid var(--gold);
-        }
-        
-        .feature-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            color: var(--gold);
-            margin-bottom: 10px;
-            font-weight: 500;
-        }
-        
-        .feature-desc {
-            font-size: 1rem;
-            color: var(--dark);
-            line-height: 1.6;
-        }
-        
+        html[dir="rtl"] .feature-item { border-left: none; border-right: 4px solid var(--gold); }
+        .feature-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--gold); margin-bottom: 10px; font-weight: 500; }
+        .feature-desc { font-size: 1rem; color: var(--dark); line-height: 1.6; }
+
         /* HIGHLIGHT BOX */
         .highlight-box {
-            background: linear-gradient(135deg, rgba(201, 168, 76, 0.05) 0%, rgba(201, 168, 76, 0.1) 100%);
+            background: #FFFBF0;
             border: 2px solid var(--gold);
             padding: 30px;
             margin: 30px 0;
             border-radius: 3px;
         }
-        
-        .highlight-box h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            color: var(--gold);
-            margin-bottom: 15px;
-            font-weight: 500;
+        .highlight-box h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--gold); margin-bottom: 15px; font-weight: 500; }
+        .highlight-box p { font-size: 1.05rem; line-height: 1.8; }
+
+        /* FLIPBOOK FEATURE BOX */
+        .flipbook-box {
+            background: #FFF8EC;
+            border: 2px solid var(--gold);
+            border-left: 6px solid var(--gold);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 3px;
         }
-        
-        .highlight-box p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-        
+        html[dir="rtl"] .flipbook-box { border-left: 2px solid var(--gold); border-right: 6px solid var(--gold); }
+        .flipbook-box h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--gold); margin-bottom: 15px; font-weight: 600; }
+        .flipbook-box p { font-size: 1.05rem; line-height: 1.8; margin-bottom: 10px; }
+        .flipbook-box ul { padding-left: 20px; margin-top: 10px; }
+        html[dir="rtl"] .flipbook-box ul { padding-left: 0; padding-right: 20px; }
+        .flipbook-box li { font-size: 1rem; line-height: 2; color: var(--dark); }
+
         /* FOOTER */
         .footer {
             text-align: center;
@@ -199,430 +125,455 @@
             color: var(--light);
             font-size: 0.95rem;
         }
-        
-        .footer p {
-            margin: 10px 0;
-        }
-        
+        .footer p { margin: 10px 0; }
+
         /* HIDDEN SECTIONS */
-        .lang-section {
-            display: none;
-        }
-        
-        .lang-section.active {
-            display: block;
-        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- LANGUAGE SELECTOR -->
-        <div class="nav-top">
-            <button class="lang-btn active" onclick="switchLang('en')">English</button>
-            <button class="lang-btn" onclick="switchLang('fr')">Français</button>
-            <button class="lang-btn" onclick="switchLang('ar')">العربية</button>
+<div class="container">
+    <!-- LANGUAGE SELECTOR -->
+    <div class="nav-top">
+        <button class="lang-btn active" onclick="switchLang('en', this)">English</button>
+        <button class="lang-btn" onclick="switchLang('fr', this)">Français</button>
+        <button class="lang-btn" onclick="switchLang('ar', this)">العربية</button>
+
+    </div>
+
+    <!-- ========== ENGLISH ========== -->
+    <div id="lang-en" class="lang-section active">
+        <div class="header">
+            <div class="logo">RealTour</div>
+            <div class="tagline">Luxury Real Estate Studio</div>
+            <div class="thank-you">Thank You for Your Purchase!</div>
         </div>
 
-        <!-- ENGLISH VERSION -->
-        <div id="lang-en" class="lang-section active">
-            <div class="header">
-                <div class="logo">RealTour</div>
-                <div class="tagline">Luxury Real Estate Studio</div>
-                <div class="thank-you">Thank You for Your Purchase!</div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Welcome to RealTour</h2>
-                <div class="section-content">
-                    <p>Dear Valued Client,</p>
-                    <p>We are thrilled to welcome you to the RealTour community! You have just acquired a professional-grade application designed to transform the way you present luxury real estate properties. This powerful studio empowers you to create stunning, magazine-quality lookbooks in minutes—without any design experience required.</p>
-                    <p>RealTour is engineered for real estate professionals who demand excellence. Every feature, every interaction, and every design element has been carefully crafted to help you showcase properties with sophistication and editorial mastery.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">What You Own</h2>
-                <div class="section-content">
-                    <p><strong>RealTour Studio</strong> is a complete digital editorial platform for creating luxury real estate presentations. With lifetime access and unlimited creations, you can produce as many professional lookbooks as you need—one-time payment, forever use.</p>
-                    <div class="highlight-box">
-                        <h3>One-Time Purchase • Unlimited Power</h3>
-                        <p>No subscriptions. No recurring fees. No limitations. Create hundreds of lookbooks, customize every detail, export to PDF, and share with clients—all included in your purchase.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Core Features</h2>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <div class="feature-title">🎨 Drag & Drop Editor</div>
-                        <div class="feature-desc">Intuitive interface to add images, edit text, adjust fonts, and customize every detail without touching code.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🌍 Multilingual Support</div>
-                        <div class="feature-desc">Create lookbooks in English, French, Arabic, and more. Perfect for international properties and global clients.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">📝 Professional Templates</div>
-                        <div class="feature-desc">Pre-designed magazine layouts handcrafted for luxury real estate. Elegant typography and sophisticated styling included.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🖼️ Image Management</div>
-                        <div class="feature-desc">Upload, resize, position, and optimize images with our built-in tools. Support for property photos, videos, and 3D tours.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🎯 Customizable Branding</div>
-                        <div class="feature-desc">Add your agency logo, agent name, contact info, and custom messaging. Maintain brand consistency across all lookbooks.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">📊 Advanced Typography</div>
-                        <div class="feature-desc">Choose from premium fonts, adjust line spacing, and create hierarchy. Professional typography sets luxury properties apart.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🎬 Multimedia Integration</div>
-                        <div class="feature-desc">Embed property video tours, Matterport links, and 3D presentations directly in your lookbooks.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">💾 PDF Export & Sharing</div>
-                        <div class="feature-desc">Download high-quality PDFs, share via email, WhatsApp, or any platform. Print-ready for offline presentations.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">↩️ Undo & Redo</div>
-                        <div class="feature-desc">Full edit history. Make changes with confidence—undo anything instantly if you change your mind.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🎨 Color Customization</div>
-                        <div class="feature-desc">Change text colors and background colors with an intuitive color palette. Match any brand identity or design concept.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">✍️ Digital Signature</div>
-                        <div class="feature-desc">Add your signature to the closing page. Professional touch that builds trust with clients.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">📱 Responsive Preview</div>
-                        <div class="feature-desc">Preview your lookbook on desktop and mobile. Ensure perfect presentation on every device.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">The Professional Magazine You Create</h2>
-                <div class="highlight-box">
-                    <h3>Editorial Excellence in Every Detail</h3>
-                    <p>After editing in RealTour, your property lookbook will feature:</p>
-                </div>
-                <div class="section-content">
-                    <p><strong>Cover Page:</strong> Elegant introduction with property name, agency branding, and presented-to client name. Sets the tone for sophistication.</p>
-                    <p><strong>Property Portfolio Pages:</strong> Beautiful layouts showcase multiple images per page with editorial narratives. Images are large, impactful, and professionally arranged.</p>
-                    <p><strong>Professional Typography:</strong> Handcrafted fonts (Playfair Display, Cormorant Garamond, and more) provide editorial-grade aesthetics that rival luxury magazines.</p>
-                    <p><strong>Customizable Color Schemes:</strong> Brand colors applied consistently throughout. Maintains visual coherence and professional appearance.</p>
-                    <p><strong>Agent Information Block:</strong> Agency name, agent details, contact information, and signature. Professional finishing touch on the closing page.</p>
-                    <p><strong>Closing Page:</strong> Investment overview and call-to-action. Leaves a memorable final impression on prospects.</p>
-                    <p><strong>Print-Ready PDFs:</strong> High-resolution export suitable for digital sharing or premium printing. Client-facing deliverable that reflects your excellence.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">How to Get Started</h2>
-                <div class="section-content">
-                    <p><strong>1. Open the Application:</strong> Launch RealTour_app.html in your web browser (Chrome, Firefox, Safari, Edge all work perfectly).</p>
-                    <p><strong>2. Enter Your Details:</strong> Fill in agency name, agent name, client name, and branding information.</p>
-                    <p><strong>3. Upload Images:</strong> Add property photos by uploading directly into each page layout.</p>
-                    <p><strong>4. Edit & Customize:</strong> Use the intuitive editor to adjust text, fonts, colors, spacing, and layout.</p>
-                    <p><strong>5. Add Multimedia:</strong> Optionally add video tour links or 3D presentation URLs.</p>
-                    <p><strong>6. Preview & Export:</strong> Preview your complete magazine, then export as a high-quality PDF ready to share.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Pro Tips for Beautiful Results</h2>
-                <div class="section-content">
-                    <p><strong>Use High-Quality Images:</strong> The better your property photos, the more stunning your lookbook. Professional photography makes a dramatic difference.</p>
-                    <p><strong>Consistent Branding:</strong> Keep colors, logos, and messaging consistent. This builds professional credibility.</p>
-                    <p><strong>Compelling Narratives:</strong> Write editorial descriptions that tell the story of the property. Focus on luxury, lifestyle, and unique selling points.</p>
-                    <p><strong>Professional Typography:</strong> The built-in fonts are already elegant—simply choose one and let the typography enhance your message.</p>
-                    <p><strong>Multimedia Integration:</strong> Embed video tours and 3D presentations. Modern luxury buyers expect interactive experiences.</p>
-                    <p><strong>Personalization:</strong> Address clients by name. Customize closing pages with agent signatures. Personal touches create emotional connections.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Support & Resources</h2>
-                <div class="section-content">
-                    <p><strong>Browser Compatibility:</strong> RealTour works on all modern browsers (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+). Desktop and tablet recommended for best experience.</p>
-                    <p><strong>Data & Privacy:</strong> All your work is stored locally in your browser. Your data never leaves your device. Complete privacy guaranteed.</p>
-                    <p><strong>Updates & Improvements:</strong> RealTour is actively maintained with regular feature updates and improvements based on user feedback.</p>
-                </div>
-            </div>
-
-            <div class="footer">
-                <p><strong>RealTour Studio</strong> — Professional Real Estate Publishing</p>
-                <p>Crafted for professionals who demand excellence. Designed for luxury.</p>
-                <p style="margin-top: 20px; font-size: 0.9rem;">© 2026 Naira Digital. All rights reserved.</p>
+        <div class="section">
+            <h2 class="section-title">Welcome to RealTour</h2>
+            <div class="section-content">
+                <p>Dear Valued Client,</p>
+                <p>We are thrilled to welcome you to the RealTour community! You have just acquired a professional-grade application designed to transform the way you present luxury real estate properties. This powerful studio empowers you to create stunning, magazine-quality lookbooks in minutes—without any design experience required.</p>
+                <p>RealTour is engineered for real estate professionals who demand excellence. Every feature, every interaction, and every design element has been carefully crafted to help you showcase properties with sophistication and editorial mastery.</p>
             </div>
         </div>
 
-        <!-- FRENCH VERSION -->
-        <div id="lang-fr" class="lang-section">
-            <div class="header">
-                <div class="logo">RealTour</div>
-                <div class="tagline">Studio Immobilier de Luxe</div>
-                <div class="thank-you">Merci pour Votre Achat!</div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Bienvenue à RealTour</h2>
-                <div class="section-content">
-                    <p>Cher Client Précieux,</p>
-                    <p>Nous sommes ravis de vous accueillir dans la communauté RealTour! Vous venez d'acquérir une application de qualité professionnelle conçue pour transformer la façon dont vous présentez les propriétés immobilières de luxe. Ce puissant studio vous permet de créer de magnifiques livres numériques de qualité magazine en quelques minutes—sans aucune expérience en conception requise.</p>
-                    <p>RealTour est conçu pour les professionnels de l'immobilier qui exigent l'excellence. Chaque fonctionnalité, chaque interaction et chaque élément de conception a été soigneusement conçu pour vous aider à présenter les propriétés avec sophistication et maîtrise éditoriale.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Ce Que Vous Possédez</h2>
-                <div class="section-content">
-                    <p><strong>RealTour Studio</strong> est une plateforme éditoriale numérique complète pour créer des présentations immobilières de luxe. Avec un accès à vie et des créations illimitées, vous pouvez produire autant de livres numériques professionnels que vous le souhaitez—un seul achat, utilisation à vie.</p>
-                    <div class="highlight-box">
-                        <h3>Achat Unique • Pouvoir Illimité</h3>
-                        <p>Pas d'abonnements. Pas de frais récurrents. Aucune limitation. Créez des centaines de livres numériques, personnalisez chaque détail, exportez en PDF et partagez avec les clients—tout inclus dans votre achat.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Fonctionnalités Principales</h2>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <div class="feature-title">🎨 Éditeur Glisser & Déposer</div>
-                        <div class="feature-desc">Interface intuitive pour ajouter des images, éditer du texte, ajuster les polices et personnaliser chaque détail sans coder.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🌍 Support Multilingue</div>
-                        <div class="feature-desc">Créez des livres numériques en anglais, français, arabe et plus. Parfait pour les propriétés internationales et les clients mondiaux.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">📝 Modèles Professionnels</div>
-                        <div class="feature-desc">Mises en page de magazine pré-conçues artisanalement pour l'immobilier de luxe. Typographie élégante et style sophistiqué inclus.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🖼️ Gestion des Images</div>
-                        <div class="feature-desc">Téléchargez, redimensionnez, positionnez et optimisez les images avec nos outils intégrés. Support des photos, vidéos et visites 3D.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🎯 Marquage Personnalisable</div>
-                        <div class="feature-desc">Ajoutez votre logo d'agence, le nom de l'agent, les coordonnées et les messages personnalisés. Cohérence de marque garantie.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">📊 Typographie Avancée</div>
-                        <div class="feature-desc">Choisissez parmi des polices premium, ajustez l'espacement et créez une hiérarchie. La typographie professionnelle distingue les propriétés de luxe.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🎬 Intégration Multimédia</div>
-                        <div class="feature-desc">Intégrez les visites vidéo, les liens Matterport et les présentations 3D directement dans vos livres numériques.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">💾 Export PDF et Partage</div>
-                        <div class="feature-desc">Téléchargez des PDF haute qualité, partagez par email, WhatsApp ou n'importe quelle plateforme. Prêt à imprimer.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">↩️ Annuler & Rétablir</div>
-                        <div class="feature-desc">Historique d'édition complet. Faites des modifications en toute confiance—annulez n'importe quoi instantanément.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🎨 Personnalisation des Couleurs</div>
-                        <div class="feature-desc">Changez les couleurs de texte et de fond avec une palette de couleurs intuitive. Adaptez-vous à toute identité de marque.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">✍️ Signature Numérique</div>
-                        <div class="feature-desc">Ajoutez votre signature à la page de fermeture. Touche professionnelle qui renforce la confiance des clients.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">📱 Aperçu Réactif</div>
-                        <div class="feature-desc">Aperçu de votre livre numérique sur bureau et mobile. Préparation parfaite sur chaque appareil.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Le Magazine Professionnel Que Vous Créez</h2>
+        <div class="section">
+            <h2 class="section-title">What You Own</h2>
+            <div class="section-content">
+                <p><strong>RealTour Studio</strong> is a complete digital editorial platform for creating luxury real estate presentations. With lifetime access and unlimited creations, you can produce as many professional lookbooks as you need—one-time payment, forever use.</p>
                 <div class="highlight-box">
-                    <h3>Excellence Éditoriale dans Chaque Détail</h3>
-                    <p>Après édition dans RealTour, votre livre numérique de propriété présentera:</p>
+                    <h3>One-Time Purchase • Unlimited Power</h3>
+                    <p>No subscriptions. No recurring fees. No limitations. Create hundreds of lookbooks, customize every detail, export to PDF, generate interactive flipbooks, and share with clients—all included in your purchase.</p>
                 </div>
-                <div class="section-content">
-                    <p><strong>Page de Couverture:</strong> Introduction élégante avec le nom de la propriété, la marque d'agence et le nom du client. Établit le ton de la sophistication.</p>
-                    <p><strong>Pages de Portfolio:</strong> De magnifiques mises en page mettent en avant plusieurs images par page avec des récits éditoriaux. Les images sont grandes, percutantes et arrangées professionnellement.</p>
-                    <p><strong>Typographie Professionnelle:</strong> Des polices artisanalement conçues fournissent une esthétique de qualité éditoriale qui rivalise avec les magazines de luxe.</p>
-                    <p><strong>Schémas de Couleurs Personnalisables:</strong> Les couleurs de marque appliquées de manière cohérente. Maintient la cohérence visuelle et l'apparence professionnelle.</p>
-                    <p><strong>Bloc d'Informations d'Agent:</strong> Nom d'agence, détails d'agent, coordonnées et signature. Touche professionnelle sur la page de fermeture.</p>
-                    <p><strong>Page de Fermeture:</strong> Aperçu d'investissement et appel à l'action. Laisse une impression mémorable finale sur les prospects.</p>
-                    <p><strong>PDFs Prêts pour l'Impression:</strong> Export haute résolution adapté au partage numérique ou à l'impression premium. Document client qui reflète votre excellence.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Comment Commencer</h2>
-                <div class="section-content">
-                    <p><strong>1. Ouvrez l'Application:</strong> Lancez RealTour_app.html dans votre navigateur Web (Chrome, Firefox, Safari, Edge fonctionnent tous parfaitement).</p>
-                    <p><strong>2. Entrez Vos Détails:</strong> Remplissez le nom de l'agence, le nom de l'agent, le nom du client et les informations de marque.</p>
-                    <p><strong>3. Téléchargez des Images:</strong> Ajoutez des photos de propriété en téléchargeant directement dans chaque mise en page.</p>
-                    <p><strong>4. Éditez & Personnalisez:</strong> Utilisez l'éditeur intuitif pour ajuster le texte, les polices, les couleurs, l'espacement et la mise en page.</p>
-                    <p><strong>5. Ajoutez du Multimédia:</strong> Éventuellement, ajoutez des liens de visite vidéo ou des URLs de présentation 3D.</p>
-                    <p><strong>6. Aperçu & Export:</strong> Aperçu de votre magazine complet, puis exportez en PDF haute qualité prêt à partager.</p>
-                </div>
-            </div>
-
-            <div class="footer">
-                <p><strong>RealTour Studio</strong> — Édition Immobilière Professionnelle</p>
-                <p>Créé pour les professionnels qui exigent l'excellence. Conçu pour le luxe.</p>
-                <p style="margin-top: 20px; font-size: 0.9rem;">© 2026 Naira Digital. Tous droits réservés.</p>
             </div>
         </div>
 
-        <!-- ARABIC VERSION -->
-        <div id="lang-ar" class="lang-section">
-            <div class="header">
-                <div class="logo">RealTour</div>
-                <div class="tagline">استوديو العقارات الفاخرة</div>
-                <div class="thank-you">شكراً لك على شرائك!</div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">أهلاً وسهلاً بك في RealTour</h2>
-                <div class="section-content">
-                    <p>عميلنا العزيز،</p>
-                    <p>نحن متحمسون لاستقبالك في مجتمع RealTour! لقد حصلت للتو على تطبيق احترافي مصمم لتحويل الطريقة التي تعرض بها العقارات الفاخرة. يمكّنك هذا الاستوديو القوي من إنشاء كتيبات رقمية جميلة بجودة المجلات في دقائق—بدون أي خبرة تصميم مطلوبة.</p>
-                    <p>RealTour مصمم لمحترفي العقارات الذين يطالبون بالتميز. تم تصميم كل ميزة وكل تفاعل وكل عنصر تصميم بعناية فائقة لمساعدتك على عرض العقارات برقي وإتقان تحريري.</p>
+        <div class="section">
+            <h2 class="section-title">Core Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-title">🎨 Drag & Drop Editor</div>
+                    <div class="feature-desc">Intuitive interface to add images, edit text, adjust fonts, and customize every detail without touching code.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📖 Interactive Flipbook</div>
+                    <div class="feature-desc">Generate a stunning page-turn flipbook from your lookbook in one click. Download as a standalone HTML file and share with clients for an immersive experience.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🌍 Multilingual Support</div>
+                    <div class="feature-desc">Create lookbooks in English, French, Arabic, and more. Perfect for international properties and global clients.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📝 Professional Templates</div>
+                    <div class="feature-desc">Pre-designed magazine layouts handcrafted for luxury real estate. Elegant typography and sophisticated styling included.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🖼️ Image Management</div>
+                    <div class="feature-desc">Upload, resize, position, and optimize images with built-in tools. Support for property photos, videos, and 3D tours.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🎯 Customizable Branding</div>
+                    <div class="feature-desc">Add your agency logo, agent name, contact info, and custom messaging. Maintain brand consistency across all lookbooks.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📊 Advanced Typography</div>
+                    <div class="feature-desc">Choose from premium fonts, adjust line spacing, and create hierarchy. Professional typography sets luxury properties apart.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🎬 Multimedia Integration</div>
+                    <div class="feature-desc">Embed property video tours, Matterport links, and 3D presentations directly in your lookbooks.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">💾 PDF Export & Sharing</div>
+                    <div class="feature-desc">Download high-quality PDFs, share via email, WhatsApp, or any platform. Print-ready for offline presentations.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">↩️ Undo & Redo</div>
+                    <div class="feature-desc">Full edit history. Make changes with confidence—undo anything instantly if you change your mind.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🎨 Color Customization</div>
+                    <div class="feature-desc">Change text colors and background colors with an intuitive color palette. Match any brand identity or design concept.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">✍️ Digital Signature</div>
+                    <div class="feature-desc">Add your signature to the closing page. A professional touch that builds trust with clients.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📱 Responsive Preview</div>
+                    <div class="feature-desc">Preview your lookbook on desktop and mobile. Ensure perfect presentation on every device.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📤 Flipbook Sharing</div>
+                    <div class="feature-desc">Share your interactive flipbook directly via WhatsApp or email, or present it full-screen in a new tab for live client presentations.</div>
                 </div>
             </div>
+        </div>
 
-            <div class="section">
-                <h2 class="section-title">ما الذي تملكه</h2>
-                <div class="section-content">
-                    <p><strong>RealTour Studio</strong> هي منصة تحرير رقمية متكاملة لإنشاء عروض عقارية فاخرة. مع الوصول مدى الحياة والإنشاءات غير المحدودة، يمكنك إنتاج العديد من الكتيبات الرقمية الاحترافية كما تشاء—دفعة واحدة، استخدام دائم.</p>
-                    <div class="highlight-box">
-                        <h3>شراء فريد • قوة غير محدودة</h3>
-                        <p>بدون اشتراكات. بدون رسوم متكررة. بدون قيود. أنشئ مئات الكتيبات الرقمية، خصص كل التفاصيل، صدر إلى PDF، وشارك مع العملاء—كل ذلك مضمون في شرائك.</p>
-                    </div>
-                </div>
+        <div class="section">
+            <h2 class="section-title">✨ The Flipbook Feature</h2>
+            <div class="flipbook-box">
+                <h3>From Lookbook to Interactive Flipbook — in One Click</h3>
+                <p>RealTour's most impressive feature transforms your static magazine into a living, page-turning experience. Once you've completed your lookbook, simply click <strong>Flipbook</strong> to generate a fully interactive HTML presentation your clients can navigate with swipes, clicks, or keyboard arrows.</p>
+                <ul>
+                    <li>🖱️ <strong>Page-Turn Animation</strong> — Smooth, realistic flip effect on every page transition</li>
+                    <li>🔍 <strong>Zoom In / Out</strong> — Clients can zoom into details using Ctrl+Scroll or the zoom controls</li>
+                    <li>⌨️ <strong>Keyboard Navigation</strong> — Arrow keys move forward and backward through pages</li>
+                    <li>📥 <strong>Download as HTML</strong> — Save the flipbook as a standalone file to send to any client</li>
+                    <li>🖥️ <strong>Present Mode</strong> — Open the flipbook full-screen in a new browser tab for live meetings</li>
+                    <li>📲 <strong>Share via WhatsApp or Email</strong> — Send the flipbook link directly to clients in seconds</li>
+                    <li>🌐 <strong>RTL Support</strong> — Flipbook direction adapts automatically for Arabic and Hebrew</li>
+                    <li>📱 <strong>Mobile Friendly</strong> — Works beautifully on phones and tablets</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="section">
-                <h2 class="section-title">الميزات الأساسية</h2>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <div class="feature-title">🎨 محرر السحب والإفلات</div>
-                        <div class="feature-desc">واجهة بديهية لإضافة الصور وتحرير النصوص وضبط الخطوط وتخصيص كل التفاصيل بدون أي برمجة.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🌍 دعم متعدد اللغات</div>
-                        <div class="feature-desc">أنشئ كتيبات بالإنجليزية والفرنسية والعربية والمزيد. مثالي للعقارات الدولية والعملاء العالميين.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">📝 قوالب احترافية</div>
-                        <div class="feature-desc">تخطيطات مجلات مصممة حرفياً للعقارات الفاخرة. الطباعة الأنيقة والنمط المتطور مشمول.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🖼️ إدارة الصور</div>
-                        <div class="feature-desc">حمّل وأعد حجم صورك وضعها بموضع محدد وحسّنها باستخدام أدواتنا المدمجة. دعم الصور والفيديوهات والجولات ثلاثية الأبعاد.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🎯 التسمية القابلة للتخصيص</div>
-                        <div class="feature-desc">أضف شعار وكالتك واسم الوكيل والمعلومات الاتصالية والرسائل المخصصة. ضمان الاتساق في العلامة التجارية.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">📊 الطباعة المتقدمة</div>
-                        <div class="feature-desc">اختر من بين خطوط ممتازة واضبط المسافات وأنشئ التسلسل الهرمي. الطباعة الاحترافية تميز العقارات الفاخرة.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🎬 تكامل الوسائط المتعددة</div>
-                        <div class="feature-desc">قم بدمج جولات الفيديو وروابط Matterport والعروض التقديمية ثلاثية الأبعاد مباشرة في كتيباتك.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">💾 تصدير PDF والمشاركة</div>
-                        <div class="feature-desc">حمّل ملفات PDF عالية الجودة وشاركها عبر البريد الإلكتروني والواتس والمنصات الأخرى. جاهزة للطباعة.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">↩️ الرجوع والإعادة</div>
-                        <div class="feature-desc">سجل تحرير كامل. قم بالتغييرات بثقة—تراجع عن أي شيء على الفور إذا غيرت رأيك.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">🎨 تخصيص الألوان</div>
-                        <div class="feature-desc">غيّر ألوان النصوص والخلفيات باستخدام لوحة ألوان بديهية. اتطابق مع أي هوية علامة تجارية.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">✍️ التوقيع الرقمي</div>
-                        <div class="feature-desc">أضف توقيعك إلى صفحة الإغلاق. لمسة احترافية تبني الثقة مع العملاء.</div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-title">📱 معاينة سريعة التجاوب</div>
-                        <div class="feature-desc">اعرض كتيبك على سطح المكتب والهاتف المحمول. تأكد من العرض المثالي على كل جهاز.</div>
-                    </div>
-                </div>
+        <div class="section">
+            <h2 class="section-title">The Professional Magazine You Create</h2>
+            <div class="highlight-box">
+                <h3>Editorial Excellence in Every Detail</h3>
+                <p>After editing in RealTour, your property lookbook will feature:</p>
             </div>
+            <div class="section-content">
+                <p><strong>Cover Page:</strong> Elegant introduction with property name, agency branding, and presented-to client name. Sets the tone for sophistication.</p>
+                <p><strong>Property Portfolio Pages:</strong> Beautiful layouts showcase multiple images per page with editorial narratives. Images are large, impactful, and professionally arranged.</p>
+                <p><strong>Professional Typography:</strong> Handcrafted fonts (Playfair Display, Cormorant Garamond, and more) provide editorial-grade aesthetics that rival luxury magazines.</p>
+                <p><strong>Customizable Color Schemes:</strong> Brand colors applied consistently throughout. Maintains visual coherence and professional appearance.</p>
+                <p><strong>Agent Information Block:</strong> Agency name, agent details, contact information, and signature. Professional finishing touch on the closing page.</p>
+                <p><strong>Closing Page:</strong> Investment overview and call-to-action. Leaves a memorable final impression on prospects.</p>
+                <p><strong>Print-Ready PDFs:</strong> High-resolution export suitable for digital sharing or premium printing. Client-facing deliverable that reflects your excellence.</p>
+                <p><strong>Interactive Flipbook:</strong> A downloadable HTML file with page-turn animation, zoom, and sharing options — an experience no PDF can match.</p>
+            </div>
+        </div>
 
-            <div class="section">
-                <h2 class="section-title">المجلة الاحترافية التي تنشئها</h2>
-                <div class="highlight-box">
-                    <h3>التميز التحريري في كل التفاصيل</h3>
-                    <p>بعد التحرير في RealTour، سيعرض كتيبك العقاري:</p>
-                </div>
-                <div class="section-content">
-                    <p><strong>صفحة الغلاف:</strong> مقدمة أنيقة مع اسم العقار وعلامة الوكالة واسم العميل. تضع أساس الرقي.</p>
-                    <p><strong>صفحات محفظة العقارات:</strong> تخطيطات جميلة تعرض صوراً متعددة لكل صفحة مع السرد التحريري. الصور كبيرة وتأثيرية وممنوعة بشكل احترافي.</p>
-                    <p><strong>الطباعة الاحترافية:</strong> الخطوط المصممة حرفياً توفر جماليات بدرجة تحريرية تنافس مجلات الفاخرة.</p>
-                    <p><strong>أنظمة الألوان القابلة للتخصيص:</strong> ألوان العلامة التجارية مطبقة بشكل متسق. تحافظ على التماسك البصري والمظهر الاحترافي.</p>
-                    <p><strong>كتلة معلومات الوكيل:</strong> اسم الوكالة وتفاصيل الوكيل ومعلومات الاتصال والتوقيع. لمسة احترافية على صفحة الإغلاق.</p>
-                    <p><strong>صفحة الإغلاق:</strong> نظرة عامة على الاستثمار ودعوة للعمل. تترك انطباعاً نهائياً لا ينسى على الآفاق.</p>
-                    <p><strong>ملفات PDF جاهزة للطباعة:</strong> تصدير عالي الدقة مناسب للمشاركة الرقمية أو الطباعة الممتازة. وثيقة موجهة للعميل تعكس تميزك.</p>
-                </div>
+        <div class="section">
+            <h2 class="section-title">How to Get Started</h2>
+            <div class="section-content">
+                <p><strong>1. Open the Application:</strong> Launch RealTour_app-index.html in your web browser (Chrome, Firefox, Safari, Edge all work perfectly).</p>
+                <p><strong>2. Enter Your Details:</strong> Fill in agency name, agent name, client name, and branding information.</p>
+                <p><strong>3. Upload Images:</strong> Add property photos by uploading directly into each page layout.</p>
+                <p><strong>4. Edit & Customize:</strong> Use the intuitive editor to adjust text, fonts, colors, spacing, and layout.</p>
+                <p><strong>5. Add Multimedia:</strong> Optionally add video tour links or 3D presentation URLs.</p>
+                <p><strong>6. Preview & Export:</strong> Preview your complete magazine, then export as a high-quality PDF ready to share.</p>
+                <p><strong>7. Generate Flipbook:</strong> Click the Flipbook button to create an interactive page-turn presentation. Download or share it directly with your clients.</p>
             </div>
+        </div>
 
-            <div class="section">
-                <h2 class="section-title">كيفية البدء</h2>
-                <div class="section-content">
-                    <p><strong>1. افتح التطبيق:</strong> شغّل RealTour_app.html في متصفح الويب الخاص بك (يعمل Chrome و Firefox و Safari و Edge بشكل مثالي).</p>
-                    <p><strong>2. أدخل التفاصيل:</strong> املأ اسم الوكالة واسم الوكيل واسم العميل ومعلومات العلامة التجارية.</p>
-                    <p><strong>3. حمّل الصور:</strong> أضف صور العقارات بتحميلها مباشرة في كل تخطيط صفحة.</p>
-                    <p><strong>4. حرّر و خصّص:</strong> استخدم المحرر البديهي لضبط النصوص والخطوط والألوان والمسافات والتخطيط.</p>
-                    <p><strong>5. أضف الوسائط المتعددة:</strong> اختياراً، أضف روابط جولة الفيديو أو URLs العرض التقديمي ثلاثي الأبعاد.</p>
-                    <p><strong>6. المعاينة والتصدير:</strong> معاينة مجلتك الكاملة، ثم صدّرها كـ PDF عالي الجودة جاهزاً للمشاركة.</p>
-                </div>
+        <div class="section">
+            <h2 class="section-title">Pro Tips for Beautiful Results</h2>
+            <div class="section-content">
+                <p><strong>Use High-Quality Images:</strong> The better your property photos, the more stunning your lookbook. Professional photography makes a dramatic difference.</p>
+                <p><strong>Consistent Branding:</strong> Keep colors, logos, and messaging consistent. This builds professional credibility.</p>
+                <p><strong>Compelling Narratives:</strong> Write editorial descriptions that tell the story of the property. Focus on luxury, lifestyle, and unique selling points.</p>
+                <p><strong>Professional Typography:</strong> The built-in fonts are already elegant—simply choose one and let the typography enhance your message.</p>
+                <p><strong>Multimedia Integration:</strong> Embed video tours and 3D presentations. Modern luxury buyers expect interactive experiences.</p>
+                <p><strong>Personalization:</strong> Address clients by name. Customize closing pages with agent signatures. Personal touches create emotional connections.</p>
+                <p><strong>Use the Flipbook for Presentations:</strong> Open the flipbook in Present Mode during client meetings for a truly memorable, magazine-quality experience.</p>
             </div>
+        </div>
 
-            <div class="footer">
-                <p><strong>RealTour Studio</strong> — نشر العقارات الاحترافي</p>
-                <p>مصنوع للمحترفين الذين يطلبون التميز. مصمم للفاخرة.</p>
-                <p style="margin-top: 20px; font-size: 0.9rem;">© 2026 Naira Digital. جميع الحقوق محفوظة.</p>
+        <div class="section">
+            <h2 class="section-title">Support & Resources</h2>
+            <div class="section-content">
+                <p><strong>Browser Compatibility:</strong> RealTour works on all modern browsers (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+). Desktop and tablet recommended for best experience.</p>
+                <p><strong>Data & Privacy:</strong> All your work is stored locally in your browser. Your data never leaves your device. Complete privacy guaranteed.</p>
+                <p><strong>Updates & Improvements:</strong> RealTour is actively maintained with regular feature updates and improvements based on user feedback.</p>
             </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>RealTour Studio</strong> — Professional Real Estate Publishing</p>
+            <p>Crafted for professionals who demand excellence. Designed for luxury.</p>
+            <p style="margin-top: 20px; font-size: 0.9rem;">© 2026 Naira Digital. All rights reserved.</p>
         </div>
     </div>
 
-    <script>
-        function switchLang(lang) {
-            // Hide all sections
-            document.querySelectorAll('.lang-section').forEach(el => {
-                el.classList.remove('active');
-            });
-            
-            // Show selected section
-            document.getElementById('lang-' + lang).classList.add('active');
-            
-            // Update active button
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            event.target.classList.add('active');
-            
-            // Set document language and direction
+    <!-- ========== FRENCH ========== -->
+    <div id="lang-fr" class="lang-section">
+        <div class="header">
+            <div class="logo">RealTour</div>
+            <div class="tagline">Studio Immobilier de Luxe</div>
+            <div class="thank-you">Merci pour Votre Achat!</div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Bienvenue à RealTour</h2>
+            <div class="section-content">
+                <p>Cher Client Précieux,</p>
+                <p>Nous sommes ravis de vous accueillir dans la communauté RealTour! Vous venez d'acquérir une application de qualité professionnelle conçue pour transformer la façon dont vous présentez les propriétés immobilières de luxe. Ce puissant studio vous permet de créer de magnifiques livres numériques de qualité magazine en quelques minutes—sans aucune expérience en conception requise.</p>
+                <p>RealTour est conçu pour les professionnels de l'immobilier qui exigent l'excellence. Chaque fonctionnalité, chaque interaction et chaque élément de conception a été soigneusement conçu pour vous aider à présenter les propriétés avec sophistication et maîtrise éditoriale.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Ce Que Vous Possédez</h2>
+            <div class="section-content">
+                <p><strong>RealTour Studio</strong> est une plateforme éditoriale numérique complète pour créer des présentations immobilières de luxe. Avec un accès à vie et des créations illimitées, vous pouvez produire autant de livres numériques professionnels que vous le souhaitez—un seul achat, utilisation à vie.</p>
+                <div class="highlight-box">
+                    <h3>Achat Unique • Pouvoir Illimité</h3>
+                    <p>Pas d'abonnements. Pas de frais récurrents. Aucune limitation. Créez des centaines de livres numériques, personnalisez chaque détail, exportez en PDF, générez des flipbooks interactifs et partagez avec les clients—tout inclus dans votre achat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Fonctionnalités Principales</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-title">🎨 Éditeur Glisser & Déposer</div>
+                    <div class="feature-desc">Interface intuitive pour ajouter des images, éditer du texte, ajuster les polices et personnaliser chaque détail sans coder.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📖 Flipbook Interactif</div>
+                    <div class="feature-desc">Générez un magnifique flipbook avec effet de tourne-page en un clic. Téléchargez comme fichier HTML autonome et partagez avec vos clients.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🌍 Support Multilingue</div>
+                    <div class="feature-desc">Créez des livres numériques en anglais, français, arabe et plus. Parfait pour les propriétés internationales et les clients mondiaux.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📝 Modèles Professionnels</div>
+                    <div class="feature-desc">Mises en page de magazine pré-conçues artisanalement pour l'immobilier de luxe. Typographie élégante et style sophistiqué inclus.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🖼️ Gestion des Images</div>
+                    <div class="feature-desc">Téléchargez, redimensionnez, positionnez et optimisez les images avec nos outils intégrés. Support des photos, vidéos et visites 3D.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🎯 Marquage Personnalisable</div>
+                    <div class="feature-desc">Ajoutez votre logo d'agence, le nom de l'agent, les coordonnées et les messages personnalisés. Cohérence de marque garantie.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📊 Typographie Avancée</div>
+                    <div class="feature-desc">Choisissez parmi des polices premium, ajustez l'espacement et créez une hiérarchie. La typographie professionnelle distingue les propriétés de luxe.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🎬 Intégration Multimédia</div>
+                    <div class="feature-desc">Intégrez les visites vidéo, les liens Matterport et les présentations 3D directement dans vos livres numériques.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">💾 Export PDF et Partage</div>
+                    <div class="feature-desc">Téléchargez des PDF haute qualité, partagez par email, WhatsApp ou n'importe quelle plateforme. Prêt à imprimer.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">↩️ Annuler & Rétablir</div>
+                    <div class="feature-desc">Historique d'édition complet. Faites des modifications en toute confiance—annulez n'importe quoi instantanément.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🎨 Personnalisation des Couleurs</div>
+                    <div class="feature-desc">Changez les couleurs de texte et de fond avec une palette de couleurs intuitive. Adaptez-vous à toute identité de marque.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">✍️ Signature Numérique</div>
+                    <div class="feature-desc">Ajoutez votre signature à la page de fermeture. Touche professionnelle qui renforce la confiance des clients.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📱 Aperçu Réactif</div>
+                    <div class="feature-desc">Aperçu de votre livre numérique sur bureau et mobile. Préparation parfaite sur chaque appareil.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📤 Partage Flipbook</div>
+                    <div class="feature-desc">Partagez votre flipbook interactif via WhatsApp ou email, ou présentez-le en plein écran pour des réunions clients en direct.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">✨ La Fonctionnalité Flipbook</h2>
+            <div class="flipbook-box">
+                <h3>Du Lookbook au Flipbook Interactif — en Un Clic</h3>
+                <p>La fonctionnalité la plus impressionnante de RealTour transforme votre magazine statique en une expérience vivante avec tourne-page. Une fois votre lookbook terminé, cliquez simplement sur <strong>Flipbook</strong> pour générer une présentation HTML interactive que vos clients peuvent parcourir avec des glissements, des clics ou les flèches du clavier.</p>
+                <ul>
+                    <li>🖱️ <strong>Animation Tourne-Page</strong> — Effet de flip fluide et réaliste à chaque transition</li>
+                    <li>🔍 <strong>Zoom</strong> — Les clients peuvent zoomer sur les détails via Ctrl+Défilement</li>
+                    <li>⌨️ <strong>Navigation au Clavier</strong> — Les touches fléchées avancent et reculent dans les pages</li>
+                    <li>📥 <strong>Télécharger en HTML</strong> — Sauvegardez le flipbook comme fichier autonome à envoyer à tout client</li>
+                    <li>🖥️ <strong>Mode Présentation</strong> — Ouvrez le flipbook en plein écran dans un nouvel onglet pour les réunions en direct</li>
+                    <li>📲 <strong>Partager via WhatsApp ou Email</strong> — Envoyez le lien du flipbook directement aux clients en quelques secondes</li>
+                    <li>🌐 <strong>Support RTL</strong> — La direction du flipbook s'adapte automatiquement pour l'arabe et l'hébreu</li>
+                    <li>📱 <strong>Compatible Mobile</strong> — Fonctionne parfaitement sur téléphones et tablettes</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Comment Commencer</h2>
+            <div class="section-content">
+                <p><strong>1. Ouvrez l'Application:</strong> Lancez RealTour_app.html dans votre navigateur Web.</p>
+                <p><strong>2. Entrez Vos Détails:</strong> Remplissez le nom de l'agence, le nom de l'agent, le nom du client et les informations de marque.</p>
+                <p><strong>3. Téléchargez des Images:</strong> Ajoutez des photos de propriété en téléchargeant directement dans chaque mise en page.</p>
+                <p><strong>4. Éditez & Personnalisez:</strong> Utilisez l'éditeur intuitif pour ajuster le texte, les polices, les couleurs, l'espacement et la mise en page.</p>
+                <p><strong>5. Ajoutez du Multimédia:</strong> Éventuellement, ajoutez des liens de visite vidéo ou des URLs de présentation 3D.</p>
+                <p><strong>6. Aperçu & Export:</strong> Aperçu de votre magazine complet, puis exportez en PDF haute qualité prêt à partager.</p>
+                <p><strong>7. Générez le Flipbook:</strong> Cliquez sur le bouton Flipbook pour créer une présentation interactive. Téléchargez-la ou partagez-la directement avec vos clients.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>RealTour Studio</strong> — Édition Immobilière Professionnelle</p>
+            <p>Créé pour les professionnels qui exigent l'excellence. Conçu pour le luxe.</p>
+            <p style="margin-top: 20px; font-size: 0.9rem;">© 2026 Naira Digital. Tous droits réservés.</p>
+        </div>
+    </div>
+
+    <!-- ========== ARABIC ========== -->
+    <div id="lang-ar" class="lang-section">
+        <div class="header">
+            <div class="logo">RealTour</div>
+            <div class="tagline">استوديو العقارات الفاخرة</div>
+            <div class="thank-you">شكراً لك على شرائك!</div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">أهلاً وسهلاً بك في RealTour</h2>
+            <div class="section-content">
+                <p>عميلنا العزيز،</p>
+                <p>نحن متحمسون لاستقبالك في مجتمع RealTour! لقد حصلت للتو على تطبيق احترافي مصمم لتحويل الطريقة التي تعرض بها العقارات الفاخرة. يمكّنك هذا الاستوديو القوي من إنشاء كتيبات رقمية جميلة بجودة المجلات في دقائق—بدون أي خبرة تصميم مطلوبة.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">ما الذي تملكه</h2>
+            <div class="section-content">
+                <p><strong>RealTour Studio</strong> هي منصة تحرير رقمية متكاملة لإنشاء عروض عقارية فاخرة. مع الوصول مدى الحياة والإنشاءات غير المحدودة، يمكنك إنتاج العديد من الكتيبات الرقمية الاحترافية كما تشاء—دفعة واحدة، استخدام دائم.</p>
+                <div class="highlight-box">
+                    <h3>شراء فريد • قوة غير محدودة</h3>
+                    <p>بدون اشتراكات. بدون رسوم متكررة. بدون قيود. أنشئ مئات الكتيبات الرقمية، خصص كل التفاصيل، صدّر إلى PDF، أنشئ فليب بوك تفاعلية، وشارك مع العملاء—كل ذلك مضمون في شرائك.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">الميزات الأساسية</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-title">🎨 محرر السحب والإفلات</div>
+                    <div class="feature-desc">واجهة بديهية لإضافة الصور وتحرير النصوص وضبط الخطوط وتخصيص كل التفاصيل بدون أي برمجة.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📖 فليب بوك تفاعلي</div>
+                    <div class="feature-desc">أنشئ فليب بوك مذهلاً بتأثير تقليب الصفحات بنقرة واحدة. حمّله كملف HTML مستقل وشاركه مع عملائك.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🌍 دعم متعدد اللغات</div>
+                    <div class="feature-desc">أنشئ كتيبات بالإنجليزية والفرنسية والعربية والمزيد. مثالي للعقارات الدولية والعملاء العالميين.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📝 قوالب احترافية</div>
+                    <div class="feature-desc">تخطيطات مجلات مصممة حرفياً للعقارات الفاخرة. الطباعة الأنيقة والنمط المتطور مشمول.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🖼️ إدارة الصور</div>
+                    <div class="feature-desc">حمّل وأعد حجم صورك وضعها بموضع محدد وحسّنها باستخدام أدواتنا المدمجة.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🎯 التسمية القابلة للتخصيص</div>
+                    <div class="feature-desc">أضف شعار وكالتك واسم الوكيل والمعلومات الاتصالية والرسائل المخصصة. ضمان الاتساق في العلامة التجارية.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📊 الطباعة المتقدمة</div>
+                    <div class="feature-desc">اختر من بين خطوط ممتازة واضبط المسافات وأنشئ التسلسل الهرمي. الطباعة الاحترافية تميز العقارات الفاخرة.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">🎬 تكامل الوسائط المتعددة</div>
+                    <div class="feature-desc">قم بدمج جولات الفيديو وروابط Matterport والعروض التقديمية ثلاثية الأبعاد مباشرة في كتيباتك.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">💾 تصدير PDF والمشاركة</div>
+                    <div class="feature-desc">حمّل ملفات PDF عالية الجودة وشاركها عبر البريد الإلكتروني والواتساب والمنصات الأخرى.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">↩️ الرجوع والإعادة</div>
+                    <div class="feature-desc">سجل تحرير كامل. قم بالتغييرات بثقة—تراجع عن أي شيء على الفور إذا غيرت رأيك.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">✍️ التوقيع الرقمي</div>
+                    <div class="feature-desc">أضف توقيعك إلى صفحة الإغلاق. لمسة احترافية تبني الثقة مع العملاء.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title">📱 معاينة سريعة التجاوب</div>
+                    <div class="feature-desc">اعرض كتيبك على سطح المكتب والهاتف المحمول. تأكد من العرض المثالي على كل جهاز.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">✨ ميزة الفليب بوك</h2>
+            <div class="flipbook-box">
+                <h3>من الكتيب إلى فليب بوك تفاعلي — بنقرة واحدة</h3>
+                <p>الميزة الأكثر إثارة في RealTour تحوّل مجلتك الثابتة إلى تجربة حية بتقليب الصفحات. بعد الانتهاء من الكتيب، انقر ببساطة على <strong>فليب بوك</strong> لإنشاء عرض HTML تفاعلي يمكن للعملاء التنقل فيه بالسحب أو النقر أو مفاتيح الأسهم.</p>
+                <ul>
+                    <li>🖱️ <strong>تأثير تقليب الصفحات</strong> — انتقال سلس وواقعي بين كل صفحة</li>
+                    <li>🔍 <strong>تكبير وتصغير</strong> — يمكن للعملاء التكبير على التفاصيل</li>
+                    <li>⌨️ <strong>التنقل بالكيبورد</strong> — مفاتيح الأسهم للتقدم والرجوع بين الصفحات</li>
+                    <li>📥 <strong>تحميل كـ HTML</strong> — احفظ الفليب بوك كملف مستقل لإرساله لأي عميل</li>
+                    <li>🖥️ <strong>وضع العرض التقديمي</strong> — افتح الفليب بوك بملء الشاشة في تبويب جديد للاجتماعات المباشرة</li>
+                    <li>📲 <strong>المشاركة عبر واتساب أو البريد</strong> — أرسل رابط الفليب بوك مباشرة للعملاء في ثوانٍ</li>
+                    <li>🌐 <strong>دعم RTL</strong> — اتجاه الفليب بوك يتكيف تلقائياً للعربية والعبرية</li>
+                    <li>📱 <strong>متوافق مع الجوال</strong> — يعمل بشكل رائع على الهواتف والأجهزة اللوحية</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">كيفية البدء</h2>
+            <div class="section-content">
+                <p><strong>1. افتح التطبيق:</strong> شغّل RealTour_app.html في متصفح الويب الخاص بك.</p>
+                <p><strong>2. أدخل التفاصيل:</strong> املأ اسم الوكالة واسم الوكيل واسم العميل ومعلومات العلامة التجارية.</p>
+                <p><strong>3. حمّل الصور:</strong> أضف صور العقارات بتحميلها مباشرة في كل تخطيط صفحة.</p>
+                <p><strong>4. حرّر وخصّص:</strong> استخدم المحرر البديهي لضبط النصوص والخطوط والألوان والمسافات والتخطيط.</p>
+                <p><strong>5. أضف الوسائط المتعددة:</strong> اختياراً، أضف روابط جولة الفيديو أو URLs العرض التقديمي ثلاثي الأبعاد.</p>
+                <p><strong>6. المعاينة والتصدير:</strong> معاينة مجلتك الكاملة، ثم صدّرها كـ PDF عالي الجودة جاهزاً للمشاركة.</p>
+                <p><strong>7. إنشاء الفليب بوك:</strong> انقر على زر الفليب بوك لإنشاء عرض تفاعلي. حمّله أو شاركه مباشرة مع عملائك.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>RealTour Studio</strong> — نشر العقارات الاحترافي</p>
+            <p>مصنوع للمحترفين الذين يطلبون التميز. مصمم للفاخرة.</p>
+            <p style="margin-top: 20px; font-size: 0.9rem;">© 2026 Naira Digital. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+    function switchLang(lang, btn) {
+        document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+        document.getElementById('lang-' + lang).classList.add('active');
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        if (lang === 'ar' || lang === 'he') {
+            document.documentElement.dir = 'rtl';
             document.documentElement.lang = lang;
-            if (lang === 'ar') {
-                document.documentElement.dir = 'rtl';
-            } else {
-                document.documentElement.dir = 'ltr';
-            }
+        } else {
+            document.documentElement.dir = 'ltr';
+            document.documentElement.lang = lang;
         }
-    </script>
+    }
+</script>
 </body>
 </html>
